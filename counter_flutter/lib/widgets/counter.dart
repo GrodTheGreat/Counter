@@ -30,7 +30,15 @@ class _CounterState extends State<Counter> {
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
         ),
         SizedBox(height: 50.0),
-        ElevatedButton(onPressed: _increment, child: Text('Click Me!')),
+        ElevatedButton(
+          onPressed: _increment,
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.lightBlue,
+            foregroundColor: Colors.white,
+            textStyle: TextStyle(fontSize: 18.0),
+          ),
+          child: Text('Click Me!'),
+        ),
       ],
     );
   }

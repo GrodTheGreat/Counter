@@ -9,7 +9,10 @@ class App extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Counter"),
+          title: Text(
+            "Counter",
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24.0),
+          ),
           backgroundColor: Colors.lightBlue,
           foregroundColor: Colors.white,
         ),
