@@ -25,7 +25,10 @@ class _CounterState extends State<Counter> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text('Clicked ${count.current} times'),
+        Text(
+          'Clicked ${count.current} times',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+        ),
         SizedBox(height: 50.0),
         ElevatedButton(onPressed: _increment, child: Text('Click Me!')),
       ],
